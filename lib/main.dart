@@ -67,10 +67,12 @@ class Home extends HookConsumerWidget {
     return GestureDetector(
       onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
+        appBar: AppBar(
+          title: const Text('Todos'),
+        ),
         body: ListView(
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
           children: [
-            const Title(),
             TextField(
               key: addTodoKey,
               controller: newTodoController,
@@ -175,24 +177,6 @@ class Toolbar extends HookConsumerWidget {
             ),
           ),
         ],
-      ),
-    );
-  }
-}
-
-class Title extends StatelessWidget {
-  const Title({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return const Text(
-      'todos',
-      textAlign: TextAlign.center,
-      style: TextStyle(
-        color: Color.fromARGB(38, 47, 47, 247),
-        fontSize: 100,
-        fontWeight: FontWeight.w100,
-        fontFamily: 'Helvetica Neue',
       ),
     );
   }

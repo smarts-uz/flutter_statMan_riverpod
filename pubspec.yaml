@@ -16,10 +16,21 @@ dependencies:
   flutter_riverpod: ^2.3.7
   hooks_riverpod: ^2.3.8
   uuid: ^3.0.7
+  dio: ^5.3.2
+  html: ^0.15.4
+  json_annotation: ^4.8.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
+  build_verify: ^3.0.0
+  build_runner: ^2.0.0
+  freezed: ^2.1.0
+  json_serializable: ^6.3.0
+  mockito: ^5.0.0
+
+  riverpod_generator:
+
 flutter:
   uses-material-design: true
